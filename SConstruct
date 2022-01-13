@@ -93,7 +93,7 @@ use_gprof = 0
 # WARNING: must update grackle-related lines in src/Enzo/enzo.ci
 #----------------------------------------------------------------------
 
-use_grackle = 1
+use_grackle = 0
 
 #----------------------------------------------------------------------
 # Whether to run the test programs using valgrind to check for memory leaks
@@ -257,6 +257,7 @@ elif (arch == "linux_illium"): from linux_illium import *
 elif (arch == "linux_gcc_9"):  from linux_gcc_9  import *
 elif (arch == "linux_intel"):  from linux_intel  import *
 elif (arch == "linux_yt"):     from linux_yt     import *
+elif (arch == "linux_gt"):     from linux_gt     import *
 elif (arch == "linux_gprof"):  from linux_gprof  import *
 elif (arch == "linux_mpe"):    from linux_mpe    import *
 elif (arch == "linux_tau"):    from linux_tau    import *
