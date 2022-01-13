@@ -37,7 +37,7 @@ home = os.getenv('HOME')
 # use Charm++ with randomized message queues for debugging and stress-testing
 # charm_path = home + '/Charm/charm.random'
 
-charm_path = home + "/data/git_enzo-e/charm-v6.10.2"
+charm_path = home + "/data/git-enzo-e/charm-v6.10.2"
 
 # use_papi = 1
 # papi_inc = os.getenv('PAPI_INC', '/usr/include')
