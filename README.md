@@ -1,34 +1,5 @@
-# Enzo-E/Cello
-[![CircleCI](https://circleci.com/gh/enzo-project/enzo-e.svg?style=svg)](https://circleci.com/gh/enzo-project/enzo-e)
-[![Documentation Status](https://readthedocs.org/projects/enzo-e/badge/?version=latest)](https://enzo-e.readthedocs.io/en/latest/?badge=latest)
- 
-## What is this repository for?
+This branch of Enzo-E is my functioning version that is up to date with the main branch of the original Enzo-E repository. I am developing this script to produce the bondi accretion initial problem. My plan right now is to use the IsolatedGalaxy problem as a starting point rather than the depreciated Collapse problem as a starting point. It seems that the current main branch does not even run the Collapse test problem anymore, I think.
 
-   The purpose of the Enzo-E/Cello project is to develop an
-   astrophysics and cosmology software application "Enzo-E", which is
-   built on a highly scalable parallel adaptive mesh refinement (AMR)
-   software framework "Cello," which is being developed
-   concurrently. The Enzo-E application will be capable of running
-   extreme scale numerical simulations to address current scientific
-   questions in astrophysics and cosmology, including star formation,
-   molecular cloud turbulence, interstellar medium, galaxy formation,
-   interglactic medium, formation of the first stars and galaxies,
-   galaxy clusters, and cosmic reionization.  The Cello AMR framework
-   can be used independently of Enzo-E, thus enabling researchers in
-   other scientific fields to develop AMR applications capable of
-   running on "Petascale-and-beyond" HPC platforms.
+That being said, I will use this readme file as a written log of my progress so that I do not get confused with the various versions of Enzo-E I have built on PACE.
 
-   Enzo-E/Cello is currently under active development.  It still has
-   several known issues that need to be addressed before it can be
-   used for scientific research, though it is still usable as a
-   hydrodynamics solver, especially in an educational setting.
-
-## Resources
-
-   * [Documentation](https://enzo-e.readthedocs.io/)
-   * [Users Mailing List](https://groups.google.com/forum/#!forum/enzo-e-users)
-   * [Developers Mailing List](https://groups.google.com/forum/#!forum/enzo-e-dev)   
-
-The Enzo-E project is fully open-source and contributions are very
-welcome. If you're interested in getting involved, come say hello on
-the developers mailing list!
+Jan 13, 2022: I was able to get git integrated on PACE and use it to clone the current main branch of Enzo-E as well as make various branches on my own fork. I have the main branch setup as the unbuilt version of the up to date original repository branch. The built branch does not seem to be important at this point given that I have the uptodate branch. I might delete it at some point. The uptodate branch is able to run the IsolatedGalaxy problem so that I what I plan to use as the base template for the Bondi accretion problem. This should be better than the Collapse problem because 1) it runs on the branch and 2) it already has the integration of particles and gas built into the problem.
